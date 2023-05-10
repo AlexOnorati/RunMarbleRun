@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+  <head class="margins">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Run Marble Run!</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="bootstrap-5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+  </head>
+  <body class="margins">
+    
+<div id="top">
+  <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 text-center align-items-center">
+        <img class="blog-header-logo text-dark" src="Images/Logos/logo.png">
+      </div>
+      
+    </div>
+  </header>
+
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 link-secondary" href="#About">About</a>
+      <a class="p-2 link-secondary" href="#Content">Content</a>
+      <a class="p-2 link-secondary" href="#Setup">Setup</a>
+      <a class="p-2 link-secondary" href="#RoundStart">Starting Round</a>
+      <a class="p-2 link-secondary" href="#PlayerTurn">Turn</a>
+      <a class="p-2 link-secondary" href="#PowerCard">Power Cards</a>
+      <a class="p-2 link-secondary" href="#PathAbility">Path Abilities</a>
+      <a class="p-2 link-secondary" href="#RoundEnd">End Round</a>
+      <a class="p-2 link-secondary" href="#EventApx">Event Apendix</a>
+      <a class="p-2 link-secondary" href="#WordApx">Word Appendix</a>
+    </nav>
+  </div>
+</div>
+
+<main class="margins">
+ 
+      
+
+      <article class="blog-post">
+        <div id="About">
+        <h2 class="blog-post-title">About</h2>
+
+
+        <p>Run your marble through the maze earning points and altering the path. Will you find the path for maximum points? Will you prevent other players from taking the same path? only one way to find out!</p>
+        <hr>
+        </div>
+        <div id="Content" class="p-6 p-md-6 mb-4 rounded">
+
+          <h3 class="fst-italic">Contents</h3>
+          <div class="row">
+          <div class="col">
+         
+           
+              <div class="heightA border rounded">
+              
+                  <h3 class="mb-0 centertext">50 Point Tokens</h3>
+                  
+                  <br>
+                  <img class="w-25 center" src="Images/content/PointToken.png">
+                  
+                  
+              
+             
+            </div>
+            <br>
+           
+              <div class="heightA border rounded">
+               
+                  <h3 class="mb-0 centertext">4 VP Counters</h3>
+                  <br>
+                  
+                  <img class="w-95 center" src="Images/content/VPCounter.png">
+                  
+                  
+           
+          
+            </div>
+          </div>
+          <div class="col">
+              <div class="heightA border rounded">
+               
+                  <h3 class="mb-0 centertext">Ability die</h3>
+      
+                    <br>
+                  <img class="w-50 center" src="Images/content/AbilityDice.png">
+                  
+                            
+            
+            </div>
+         
+            <br>
+              <div class="heightA border rounded">
+              
+                  <h3 class="mb-0 centertext">First Player Token</h3>
+                  <br>
+                  <img class="w-50 center" src="Images/content/FirstPlayerToken.png">
+                 
+                  
+           
+                </div>
+              </div>
+              <div class="col">
+          
+              <div class="heightA border rounded">
+              
+                  <h3 class="mb-0 centertext">100 Path Cards</h3>
+                  <br>
+                  <img class="w-50 center" src="Images/Content/CardCount.png">           
+            
+            </div>
+            <br>
+              <div class="heightA border rounded">
+              
+                  
+                  <h3 class="mb-0 centertext">4 Player Marbles</h3>
+                  
+                  <br>
+                  <img class="w-50 center" src="Images/Content/PlayerMarbles.png">        
+              
+         
+            </div>
+            
+          </div>
+          <div class="col">
+              <div class="heightA border rounded">
+             
+                  <h3 class="mb-0 centertext">60 Player Tokens</h3>  
+                  <br>     
+                  <img class="w-50 center" src="Images/Content/PlayerTokens.png">
+                        
+              
+             </div>
+             <br>
+             <div class="heightA border rounded">
+             
+              <h3 class="mb-0 centertext">20 Energy Tokens</h3>  
+              <br>     
+              <img class="w-50 imagesmallOther center" src="Images/Content/BatteryIcon.png">
+                    
+          
+         </div>
+        </div>
+        <div class="col">
+         <div class="heightA border rounded">
+             
+          <h3 class="mb-0 centertext">12 Directional Pad Tokens</h3>  
+          <br>     
+          <img class="w-50 center" src="Images/Content/DirectionalPad.png">
+                
+      
+     </div>
+           
+         
+     <br>
+            <div class="heightA border rounded">
+           
+                <h3 class="mb-0 centertext">8 Rotation Gate Tokens</h3>  
+                <br>     
+                <img class="w-50 center" src="Images/Content/RotationGate.png">
+                      
+            
+           </div>
+          </div>    
+          <div class="col">
+           <div class="heightA border rounded">
+           
+            <h3 class="mb-0 centertext">8 Triangle Gate Tokens</h3>  
+            <br>     
+            <img class="w-50 center" src="Images/Content/TriangleGate.png">
+                  
+        
+       </div>
+       <br>
+       <div class="heightA border rounded">
+           
+        <h3 class="mb-0 centertext">12 Toggle Gate Tokens</h3>  
+        <br>     
+        <img class="w-50 center" src="Images/Content/ToggleGate.png">
+              
+    
+   </div>
+         
+        </div>       
+        
+       </div>
+        </div>
+      </div>
+      
+        <div id="Setup">
+          <h2 class="blog-post-title">Setup</h2>
+
+          <p>Note: If it's your first time playing, it is recommend to use cards 002-009 in step 2 and use events cards 1-3, 2-3, and 3-2.</p>
+
+          <p>1) Place the starter path card face down (card 001) in the middle of the play area face up.</p>
+          <p>2) Shuffle all path cards except card 10, draw 8 path cards face down and place them around the starter card. It will form a 3x3 grid with the starter card.</p>
+          <p>3) Rotate the cards in the grid randomly and flip over all cards int he grid.</p>
+          <p>4) If there are any<a class="p-2 link-secondary" href="#PowerCard">Power Cards</a> place a directional pad or gate token on the card assoicated to the card.</p>
+          <p>5) Set the ability die, point tokens, and path cards to the side with room for a discard pile.</p>
+          <p>6) All players take a color marble with it's matching player markers and a victory point dial.</p>
+          <p>7) All players draw four path cards and add them to their hand. Cards in your hand are not shared with the rest of the players.</p>
+          <p>8) The player who has the highest number card in their hand, recieves the first player token and adds path card 010 to their hand.</p>
+          <p>9) Randomly select a Level 1, Level 2 and Level 3 event card. Place them facedown in a stack with Level 1 on top, Level 2 middle and Level 3 on bottom. Do not reveal any of the events.</p>
+          <img class="setup" src="Images/Instruction/Setup.png">
+          <hr>
+        </div>
+        <div id = "CardLayout">
+          <h2>Path Cards</h2>
+          <div>
+            <h4>Card properties</h4>
+            <p>1) Card number - Each card is unique has a unique number which is used for initial setup.</p>
+            <P>2) Path Node - When entering a card you will place your marble here.</P>
+            <p>3) Path - Path the marble will travel to get to the next card (colored line).</p>
+            <p>4) Point slot / <a href="#PathAbility">Ability</a> slot - Tells you what abiltiy to activate and where you place point tokens.</p>
+            <p>5) Directional Path - This is a one way path.</p>
+            <p>6) <a href="#PlayerAbility">Player Token Ability</a> - Abilites that can be claimed by players.</p>
+            <p>7) Starting Point - Place where you can put your marble to start the roll phase.</p>
+            <img class="setup1" src="Images/Instruction/cardRef.png">
+          </div>
+        </div>
+        <div id="RoundStart">
+          <h2 class="blog-post-title">Starting the Round</h2>
+          <p>At the begining of the round flip over the topcard of the event deck. Read outloud the event and adjust the maze accordingly, additional rules on the event card overwrite base rules. Each player then collects two energy. The player with the first player token will take their turn first, (see <a ref="">During Your Turn</a> section) after they have finished, players will take turns in a clockwise order.</p>
+          <hr>
+        </div> 
+        <div id="PlayerTurn">
+          <h2 class="blog-post-title">During your Turn</h2>
+          <p>The turn has four phases that are player in order:</p>
+          <h5>Build Phase:</h5>
+          <p>1) Place a path card on the maze.</p>
+          <p>A path card has to be connected to a card that is already on the board. You can pick the rotation of the card on placement.</p>
+          
+          <div class="row">
+            <div class="col">
+          <img class="imageIns" src="Images/Instruction/placeCard.png">
+              </div>
+              </div>
+              <p>2) If the card is a power card, place the token associated to the power card.</p>
+         
+          <div class="row">
+              <div class="col">
+                <img class="imageIns" src="Images/Instruction/placeCardPowerDirectional.png">
+                    </div>
+                    
+                    <div class="col">
+                      <img class="imageIns" src="Images/Instruction/placeCardPowerRotation.png">
+                          </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <img class="imageIns" src="Images/Instruction/PlaceCardPowerGate.png">
+                            </div>
+                           
+                            <div class="col">
+                              <img class="imageIns" src="Images/Instruction/PlaceCardPowerTGate.png">
+                                  </div>
+                            </div>
+                            <hr>
+          <h5>Roll Phase:</h5>
+          <p>1) Select a Starting Point and place your marble on the Path Node next to the Starting Point.</p>
+          <p>2) The path node is connected to ability slot and / or a point slot. If it's an ability slot, activate the <a href="#PathAbility">Ability</a> then place a point marker on the ability slot.</p>
+          <p>If it's a point slot, place a point marker on it. You only will place one marker total per card.</p>
+          <p>3) Repeat step 2 until your marble runs out of momentun, reaches a dead end or runs off the edge of the current maze. The marble is considered done rolling and you will move onto the collection phase.</p>
+          <p>If you pass a path your marble has already crossed, you can place a point token on an open connected point slot.</p>
+          <hr>
+          <h4>Losing Momentum</h4>
+          <p>A marble will stop rolling if it has passed four path cards with no point tokens added, no energy spent, or player tokens placed.</p>
+          <hr>
+          <h4>Dead End</h4>
+          <p>A marble will stop rolling if it enters a card path that is a dead end. A deadend is marked by a path cut corners.</p>
+          <hr>
+          <h4>Edge of the Maze</h4>
+          <p>A marble will stop rolling if it exits the open end of a card.</p>
+          <hr>
+          <h5>Collection Phase:</h5>
+          <p>1) If there is any active flags each player collects a VP for each active flag matching their player color.</p>
+          <p>2) If there are any toll booths with point tokens on them, the player who owns that toll booth removes the point token and collects a Victory Point.</p>
+          <p>3) Collect all point tokens on the board add those points to your Victory Point tracker.</p>
+          <hr>
+          <h5>Refresh Phase:</h5>
+          <p>1) Remove your marble and all energy tokens in the maze. </p>
+          <p>2) If you have less then five cards draw cards draw till your hand has five.</p>
+          <p>3) Select one of the cards in the maze that does not have a token on it and discard it. Replace it with a card from your hand using the building phase rules.</p>
+          <p>4) If you have more then four cards discard your hand down to four.</p>
+          <P>Note: If the draw pile is ever empty, reshuffle the discard pile back into the draw pile.</P>
+          <hr>
+        </div>
+        <div id="RoundEnd">
+          <h2 class="blog-post-title">End of Round</h2>
+      
+      
+          <p>When the last player has finished their turn, the round ends. A new event card is drawn for the new round (the old event is no longer in effect). Each player resets their energy tokens to two. The player with the starter token passes it to their left. The player with the first player token then starts the next round.</p>
+          <p>Note: In a two player game, the first player token does not get passed.</p>
+          <hr>
+        </div>
+        <div id="EndGame">
+          <h2 class="blog-post-title">End of Game</h2>
+      
+      
+          <p>The game ends when the third round is completed with the final event. All players count up their victory points, the player who has the most victory points wins! If there is a tie, whoever has the most active booths of the tie players win!</p>
+          <hr>
+        </div>
+        <div id="PowerCard">
+          <h2 class="blog-post-title">Power Cards</h2>
+          <p>Power cards are noted having the <img class="imagesmall text-dark" src="Images/Content/batteryIcon.png"> symbol. The path connected will also have a point slot to set points on. Power cards have different routes on how marbles pass through them. These routes can be changed by paying an energy token to alter the route. You can only use one energy on a power card per a roll phase, choose wisely!</p>
+          <hr>
+          <h4>Toggle Gate</h4>
+          <p>A marble will roll to the open path the gate is not blocking. Once the marble has past the gate, the gate's position is toggled to block the alternate path.</p>
+          <p>An energy token can be spent to toggle the gate before or after the marble has passed the gate. The gate still toggles after the marble has passed.</p>
+          <hr>
+          <h4>Rotation Gate</h4>
+          <p>A marble will roll and follow the direction of the arrow on the roation gate.</p>
+          <p>Once the marble has past the gate, the gate will rotate 90 degrees clockwise.</p>
+          <p>An energy token can be spent to rotate the gate 90 degrees clockwise or counter clockwise. The gate still rotates 90 degress clockwise after the marble has passed it.</p>
+          <hr>
+          <h4>Triangle Gate</h4>
+          <p>A marble will roll to the open path the gate is not blocking.</p>
+          <p>The marble will go straight if the path is fully blocked by the gate. (Indicated by the arrow)</p>
+          <p>Once the marble has past the gate, flip the token so the diamond on the token and on the path card line up to create an alternate path</p>
+          <p>An energy token can be spent to flip the gate before or after the marble has passed the gate. The gate still toggles after the marble has passed.</p>
+          <hr>
+          <h4>Directional Pad</h4>
+          <p>A marble will roll straight through a directional pad.</p>
+          <br>
+          <p>An energy token can be spent to change the direction the marble is moving including backwards!</p>
+          <hr>
+          <h4>Springs</h4>
+          <p>Some power cards will have the  <img class="setup2" src="Images/Instruction/spring.png">  symbol. When a marble passes this icon is jumps over a card to the next card. When a spring is paired with a directional pad or rotation gate you still follow the rules of that power card.</p>
+        </div>
+        
+ 
+    
+ <hr>
+  <div id="PathAbility" class="p-4 p-md-5 mb-4 rounded">
+
+      <h3 class="display-4 fst-italic">Path Abilities</h3>
+      <p class="lead my-3">Almost all paths have an ability associated to them. An ability is activated when a marble enters a path on the card.</p>
+      
+      <div class="row mb-4">
+        
+        <div class="col-md-6">
+          <div class="row g-0 border rounded heightB flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <div class="col-auto d-none d-lg-block">      
+              </div>
+              
+              <h3 class="mb-0"><img class="w-5 text-dark" src="Images/Icons/RMRDrawCard.png"> Draw a Card</h3>
+              <br>
+              <p class="card-text mb-auto">Draw a card from the draw pile and add it to your hand.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded heightB flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <div class="col-auto d-none d-lg-block">      
+              </div>
+              
+              <h3 class="mb-0"><img class="w-5 text-dark" src="Images/Icons/RMRPlaceCard.png"> Place a Card</h3>
+              <br>
+              <p class="card-text mb-auto">Place a card from your hand onto the maze, following build phase rules.</p>
+       
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded heightB flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <div class="col-auto d-none d-lg-block">      
+              </div>
+              
+              <h3 class="mb-0"><img class="w-5 text-dark" src="Images/Icons/RMRRotateCard.png"> Rotate a Card</h3>
+              <br>
+              <p class="card-text mb-auto">Pick the orientation the card in the maze. You cannot rotate the card with a marble on it.</p>
+         
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded heightB flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <div class="col-auto d-none d-lg-block">      
+              </div>
+              
+              <h3 class="mb-0"><img class="w-5 text-dark" src="Images/Icons/RMRMoveCard.png"> Swap a Card</h3>
+              <br>
+              <p class="card-text mb-auto">Swap two cards that are neighboring the card your marble is on. Keep the orientation of each card. You cannot swap a card with a marble on it.</p>
+       
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row col p-4 position-static g-0 border rounded heightB flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+           
+              
+              <h3 class="mb-0"><img class="w-5 text-dark" src="Images/Icons/RMRPlusOne.png"> Gain a Victory Point</h3>
+              <br>
+              <p class="card-text mb-auto">Gain a Victory Point. You still place a point on the point slot.</p>
+       
+            </div>
+          </div>
+
+        <div class="col-md-6">
+          <div class="row g-0 border rounded heightB flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <div class="col-auto d-none d-lg-block">      
+              </div>
+              
+              <h3 class="mb-0"><img class="w-5 text-dark" src="Images/Icons/RMRPlusA.png"> Gain an Energy Token</h3>
+              <br>
+              <p class="card-text mb-auto">Collect an energy token. This can only be used this turn.</p>
+         
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded heightB flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <div class="col-auto d-none d-lg-block">      
+              </div>
+              
+              <h3 class="mb-0"><img class="w-5 text-dark" src="Images/Icons/RMRBounty.png"> Roll for Ability</h3>
+              <br>
+              <p class="card-text mb-auto">Roll the die, activate the ability on the die.</p>
+         
+            </div>
+          </div>
+        </div>
+        <div id="PlayerAbility">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded heightB flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <div class="col-auto d-none d-lg-block">      
+              </div>
+              
+              <h3 class="mb-0"><img class="w-1 text-dark" src="Images/Icons/RMRFlag.png"> Place a Flag</h3>
+              <br>
+              <p class="card-text mb-auto">When passing a flag, place one of your player markers on top of the flag. If there is a different player marker already on the flag replace it. Point tokens are not placed on flags and player markers are not removed unless being replaced.</p>
+         
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded heightB flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <div class="col-auto d-none d-lg-block">      
+              </div>
+              
+              <h3 class="mb-0"><img class="w-25 text-dark" src="Images/Icons/TollBooth.png"> Place a Toll</h3>
+              <br>
+              <p class="card-text mb-auto">Take one of your player markers and place it over the toll. When a marble passes the path with the toll, place a point token on top of the toll booth matching the color with the owner. The player marker is not removed and stays till the end of the game.</p>
+         
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+   
+    
+  </div>
+  <hr>
+  
+  
+  
+  <div id="EventApx">
+    <h2 class="blog-post-title">Event Appendix</h2>
+
+
+    <p></p>
+    <hr>
+  </div>
+  <div id="WordApx">
+    <h2 class="blog-post-title">Word Appendix</h2>
+
+
+    <p></p>
+    <hr>
+  </div>
+  
+
+  </article>
+
+
+  
+
+</main>
+
+
+
+
+    
+  </body>
+</html>
