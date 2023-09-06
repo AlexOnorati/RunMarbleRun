@@ -5,21 +5,247 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
+body{
+  font-family: 'Trebuchet MS', sans-serif;
+}
+/*5500px*/
+.printerpage {
+ 
+  
 
-@page {
-  size: 5.5in 8.5in;
 }
 
+p{
+  font-size:x-large;
+}
+
+.small-number {
+  width: 20px;
+}
+
+.small-icon {
+  width: 45px;
+}
+
+.bigPage {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.bottom-down {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.bottom-down-down {
+  position: absolute;
+  
+  bottom: 10px;
+}
+
+.roll-phase-1-left{
+  
+  float: left;
+  height: 100%;
+  width: 60%;
+}
+
+.roll-phase-1-right{
+  margin-top: 0px;
+  float: right;
+  height: 100%;
+  width: 40%;
+}
+
+.roll-phase-1{
+  width: 350px;
+}
+
+.roll-phase-3{
+  width: 400px;
+}
+
+.roll-phase-2{
+  width: 200px;
+}
+
+@page {
+  size: 7in 9.25in;
+  margin: 27mm 16mm 27mm 16mm;
+}
+
+.container-left {
+  border-color: black;
+  position: relative;
+  height: 1375px;
+  width: 1063px;
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-number{
+  position: absolute;
+  right: 50px; 
+  bottom: 30px;
+}
+
+.marginPrint{
+  margin: 25px;
+
+}
+
+.battery-small{
+  width: 20px;
+}
+
+.card-layout-left{
+  float: left;
+  height: 100%;
+  width: 17%;
+}
+
+.card-layout-left-1{
+  
+  float: left;
+  height: 100%;
+  width: 30%;
+}
+.card-layout-right{
+  margin-top: 0px;
+  float: right;
+  height: 100%;
+  width: 53%;
+}
+
+.event-formatting{
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-left: 50px;
+}
+
+.event{
+  border: black;
+  border-width: 2px;
+  border-radius: 10px;
+  border-style: solid;
+  position: relative;
+  width: 700px;
+  height: 400px;
+}
+
+.event-image{
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.event-description{
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.event-title{
+  text-align: center;
+}
+
+.event-number{
+  position: absolute;
+  right: 10px; 
+  bottom: 10px;
+
+}
+
+
+.cardlayout-small {
+  width: 500px;
+}
+
+.point-cube {
+  width: 25px;
+}
+
+.container-right {
+  border-color: rgb(76, 0, 255);
+  
+  float: right;
+  height: 100%;
+  width: 50%;
+  border-style: dashed;
+  
+}
+
+.wire-nodes {
+  width:50px;
+}
+.toggle-icon {
+  width:30px;
+}
+
+.remove-block {
+  clear:both;
+}
+
+.ability-left {
+  float: left;
+  height: 100%;
+  width: 70%;
+}
+.ability-all {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+
+.ability-right {
+  float: right;
+  height: 100%;
+  width: 30%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.logo-instruction {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+
+.html{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+
+.page{
+  page-break-before: always;
+}
 .imagesmall {
-  max-width: 1.75%;
+  max-width: 25px;
 }
 
 .imagesmallOther {
-  max-width: 20%;
+  max-width: 200px;
 }
 
 .imagesmallerOther {
-  max-width: 10%;
+  max-width: 45px;
 }
 
 .margins {
@@ -31,11 +257,53 @@
   text-align: center;
 }
 
+.center-bottom {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  text-align: center;
+}
+
+.small-image {
+  width: 275px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#build-card {
+  width: 275px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#claim-memory {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#rotate-card {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100px;
+}
+.center-battery {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
 }
 
 .blog-header-logo {
@@ -90,12 +358,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .setup {
-  height: 1000px;
- 
+  height: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .setup1 {
-  height: 750px;
+  height: 100px;
  
 }
 
@@ -118,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .imageIns{
  
-  width: 450px;
+  width: 10px;
 }
 
 .flex-auto {
